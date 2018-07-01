@@ -23,6 +23,15 @@ canvas.on("mousemove", "td", function(button){
     
 })
 
+// reset the canvas
+$("#reset").click(function(e) {
+    $("td").css('background-color', 'transparent');
+});
+
+$("#remove").click(function(e) {
+    $("td").remove()
+});
+
 // Select size input
 sizePicker.submit(function(e){
     e.preventDefault();

@@ -14,17 +14,32 @@
         <input type="number" id="inputHeight" name="height" min="1" value="1">
         Grid Width:
         <input type="number" id="inputWeight" name="width" min="1" value="1">
-        <br>
         <input type="submit">
     </form>
 
     <h2>Pick A Color</h2>
     <input type="color" id="colorPicker">
 
-    <h2>Design Canvas</h2>
-    <table id="pixelCanvas">
+    
+    <div class="canvas">
+        
+        <div class="card">
+        <div style="width: 100%">
+            <h2 style="display: block">Design Canvas</h2>
+            <div class="row">
+                <button id="reset">Reset</button>
+                <button id="remove">Remove</button>
+            </div>
+        </div>
+        
+        
+            <table id="pixelCanvas">
 
-    </table>
+            </table>
+        </div>
+        
+    </div>
+    
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="designs.js"></script>
